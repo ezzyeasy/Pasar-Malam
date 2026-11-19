@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const bagCountEl = document.getElementById('bag-count');
     const bagBtn = document.getElementById('bag-btn');
     const infoBtn = document.getElementById('info-btn');
-    const topupBtn = document.getElementById('topup-btn');
-    const soundBtn = document.getElementById('sound-btn');
     const modalBackdrop = document.getElementById('modal-backdrop');
     const modalBody = document.getElementById('modal-body');
     const modalClose = document.getElementById('modal-close');
@@ -275,19 +273,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     closeModal();
                     showPlayerToast(`Tapau ${title.split(' ')[0]}! (-RM${price})`);
                 } else {
-                    buyBtn.textContent = 'Tak cukup duit! Klik +RM50 di atas untuk cucuk ATM';
+                    buyBtn.textContent = 'Tak cukup duit! Baki dompet tak mencukupi';
                     buyBtn.style.background = '#ef4444';
                     buyBtn.style.color = '#ffffff';
                 }
             });
         });
-    });
-
-    // Top-up RM50 button
-    topupBtn.addEventListener('click', () => {
-        walletRM += 50;
-        updateWalletUI();
-        showPlayerToast('Cucuk ATM +RM50!');
     });
 
     // View Tapau Shopping Bag Modal
@@ -326,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
-    // 5. LIVE PASAR MALAM CLOCK & 8-BIT AMBIENCE
+    // 5. LIVE PASAR MALAM CLOCK
     // ==========================================
     let minutes = 30;
     setInterval(() => {
@@ -334,46 +325,4 @@ document.addEventListener('DOMContentLoaded', () => {
         const padded = minutes < 10 ? `0${minutes}` : minutes;
         hudTime.textContent = `Friday | 19:${padded}`;
     }, 15000);
-
-    // Gentle 8-bit chiptune night market synthesizer (Rasa Sayang folk motif)
-    let audioCtx = null;
-    let isPlayingSound = false;
-    let melodyInterval = null;
-    // Rasa Sayang pentatonic notes (Hz)
-    const rasaSayangNotes = [261.63, 293.66, 329.63, 392.00, 329.63, 293.66, 261.63, 392.00, 440.00, 392.00, 329.63, 293.66];
-    let noteIndex = 0;
-
-    soundBtn.addEventListener('click', () => {
-        if (!isPlayingSound) {
-            if (!audioCtx) {
-                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-            }
-            if (audioCtx.state === 'suspended') {
-                audioCtx.resume();
-            }
-            isPlayingSound = true;
-            soundBtn.textContent = '🎵';
-            showPlayerToast('Muzik Pasar Malam: ON');
-
-            melodyInterval = setInterval(() => {
-                if (!isPlayingSound || !audioCtx) return;
-                const osc = audioCtx.createOscillator();
-                const gain = audioCtx.createGain();
-                osc.type = 'triangle';
-                osc.frequency.setValueAtTime(rasaSayangNotes[noteIndex], audioCtx.currentTime);
-                gain.gain.setValueAtTime(0.04, audioCtx.currentTime);
-                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.32);
-                osc.connect(gain);
-                gain.connect(audioCtx.destination);
-                osc.start();
-                osc.stop(audioCtx.currentTime + 0.34);
-                noteIndex = (noteIndex + 1) % rasaSayangNotes.length;
-            }, 380);
-        } else {
-            isPlayingSound = false;
-            soundBtn.textContent = '🔊';
-            clearInterval(melodyInterval);
-            showPlayerToast('Muzik Pasar Malam: OFF');
-        }
-    });
 });

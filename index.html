@@ -29,10 +29,11 @@
             <span class="hero-eyebrow">MALAYSIAN NIGHT MARKET INTERACTIVE EXPERIENCE</span>
             <h1 class="hero-title">Pasar Malam</h1>
             <p class="hero-text">Step into the vibrant sights, sounds, and flavours of the Malaysian night market.</p>
-            <div class="hero-pills">
-                <a href="#section-1" class="hero-pill">🍢 Street Food &amp; Air Balang</a>
-                <a href="#section-2" class="hero-pill">👘 Batik, Bundle &amp; Capal</a>
-                <a href="#section-3" class="hero-pill">🎯 Tangkap Ikan, Wau &amp; Durian</a>
+            <div class="hero-pills" role="group" aria-label="Choose a Pasar">
+                <button type="button" class="hero-pill active">🏮 Pasar Malam</button>
+                <button type="button" class="hero-pill">🌙 Bazaar Ramadhan</button>
+                <button type="button" class="hero-pill">🌿 Pasar Tani</button>
+                <button type="button" class="hero-pill">☀️ Pasar Pagi</button>
             </div>
             <div class="scroll-hint">
                 <span>Scroll down to walk through the Pasar Malam</span>
@@ -313,16 +314,6 @@
 
         <!-- Fixed Figma HUD Overlay (Visible while exploring the market) -->
         <div class="market-hud" id="market-hud">
-            <!-- Top Right Ambient Sound / Top-up Wallet Button -->
-            <div class="hud-top-right">
-                <button class="hud-btn" id="topup-btn" title="ATM Top-up RM50">
-                    <span>+RM50</span>
-                </button>
-                <button class="hud-icon-btn" id="sound-btn" title="Toggle Night Market Ambience" aria-label="Toggle Sound">
-                    🔊
-                </button>
-            </div>
-
             <!-- Bottom Left Title & Time (Matching Figma layout) -->
             <div class="hud-bottom-left">
                 <div class="hud-title">Pasar Malam</div>
