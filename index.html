@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasar Malam — Malaysian Night Market Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Galada&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-ambient-lights" aria-hidden="true">
+            <span class="hero-bulb"></span>
+            <span class="hero-bulb"></span>
+            <span class="hero-bulb"></span>
+            <span class="hero-bulb"></span>
+            <span class="hero-bulb"></span>
+            <span class="hero-bulb"></span>
+            <span class="hero-bulb"></span>
+        </div>
+        <div class="hero-content">
+            <span class="hero-eyebrow">MALAYSIAN NIGHT MARKET INTERACTIVE EXPERIENCE</span>
+            <h1 class="hero-title">Pasar Malam</h1>
+            <p class="hero-text">Step into the vibrant sights, sounds, and flavours of the Malaysian night market.</p>
+            <div class="hero-pills">
+                <a href="#section-1" class="hero-pill">🍢 Street Food &amp; Air Balang</a>
+                <a href="#section-2" class="hero-pill">👘 Batik, Bundle &amp; Capal</a>
+                <a href="#section-3" class="hero-pill">🎯 Tangkap Ikan, Wau &amp; Durian</a>
+            </div>
+            <div class="scroll-hint">
+                <span>Scroll down to walk through the Pasar Malam</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market World Wrapper (Contains the 3 Road Sections + Scroll-driven Center Character + HUD) -->
+    <main class="market-world" id="market-world">
+
+        <!-- Scroll-Driven Center Character Overlay -->
+        <div class="player-stage" id="player-stage" aria-hidden="true">
+            <div class="player-character" id="player-character">
+                <!-- RM50 Wallet Bubble matching Figma Design -->
+                <div class="wallet-bubble" id="wallet-bubble">
+                    <span class="wallet-amount" id="wallet-amount">RM50</span>
+                    <img src="assets/wallet-icon.svg" alt="Wallet" class="wallet-icon">
+                </div>
+                <!-- Action Toast Bubble -->
+                <div class="player-toast" id="player-toast">Jom jalan-jalan!</div>
+                <!-- Main Pixel Art Character -->
+                <img src="assets/player.svg" alt="Pasar Malam Visitor" class="player-sprite" id="player-sprite">
+            </div>
+        </div>
+
+        <!-- Autonomous Randomly Moving Crowd Container -->
+        <div class="crowd-layer" id="crowd-layer" aria-hidden="true"></div>
+
+        <!-- SECTION 1: PASAR MALAM FOOD & DRINKS -->
+        <section class="road-section" id="section-1" data-zone="Zone 1 • Food &amp; Air Balang">
+            <!-- Overhead Blinking Fairy String Lights -->
+            <div class="fairy-light-row" style="top: 6%;">
+                <img src="assets/fairy-lights.svg" alt="" class="fairy-svg">
+                <div class="fairy-bulbs-overlay">
+                    <span class="bulb" style="left: 9%;"></span>
+                    <span class="bulb" style="left: 21%;"></span>
+                    <span class="bulb" style="left: 36%;"></span>
+                    <span class="bulb" style="left: 50%;"></span>
+                    <span class="bulb" style="left: 64%;"></span>
+                    <span class="bulb" style="left: 79%;"></span>
+                    <span class="bulb" style="left: 91%;"></span>
+                </div>
+            </div>
+
+            <!-- Outer Left Props: Tropical Plants, Crates & Back Canopies -->
+            <img src="assets/props-plants.svg" alt="" class="scenery-prop" style="top: 12%; left: 2%;">
+            <img src="assets/canopy-back-blue.svg" alt="" class="back-canopy" style="top: 8%; left: 10%;">
+            <img src="assets/canopy-back-blue.svg" alt="" class="back-canopy" style="top: 52%; left: 9%;">
+            <img src="assets/props-plants.svg" alt="" class="scenery-prop" style="top: 62%; left: 2%;">
+
+            <!-- Outer Right Props -->
+            <img src="assets/canopy-back-blue.svg" alt="" class="back-canopy" style="top: 10%; right: 9%;">
+            <img src="assets/props-plants.svg" alt="" class="scenery-prop" style="top: 26%; right: 2%;">
+
+            <!-- STALL 1 (Left Top): Satay Kajang & Charcoal Grill with Live Smoke -->
+            <article class="stall-unit stall-left" style="top: 10%;" data-title="Satay Kajang &amp; Ayam Percik"
+                data-category="Street Food" data-price="10"
+                data-desc="Charcoal-grilled chicken &amp; beef satay fanned over glowing embers, served with rich peanut kuah kacang, nasi impit &amp; cucumber.">
+                <div class="smoke-emitter" data-smoke-x="72%" data-smoke-y="62%"></div>
+                <div class="stall-glow"></div>
+                <img src="assets/stall-satay.svg" alt="Satay Kajang Stall" class="stall-img">
+                <div class="stall-badge">
+                    <span class="stall-name">🍢 Satay Kajang Warisan</span>
+                    <span class="stall-tag">RM10</span>
+                </div>
+            </article>
+
+            <!-- STALL 2 (Left Bottom): Keropok Lekor & Satay Madu with Live Smoke -->
+            <article class="stall-unit stall-left" style="top: 54%;" data-title="Ayam Bakar &amp; Keropok Lekor"
+                data-category="Street Food" data-price="8"
+                data-desc="Crispy Terengganu Keropok Lekor and honey-glazed Ayam Bakar grilled fresh over coconut husk charcoal.">
+                <div class="smoke-emitter" data-smoke-x="72%" data-smoke-y="60%"></div>
+                <div class="stall-glow"></div>
+                <img src="assets/stall-satay.svg" alt="Ayam Bakar Stall" class="stall-img">
+                <div class="stall-badge">
+                    <span class="stall-name">🔥 Ayam Bakar &amp; Lekor</span>
+                    <span class="stall-tag">RM8</span>
+                </div>
+            </article>
+
+            <!-- STALL 3 (Right Top): Air Balang Tiga Rasa -->
+            <article class="stall-unit stall-right" style="top: 14%;" data-title="Air Balang Tiga Rasa (Ikat Tepi)"
+                data-category="Pasar Malam Drinks" data-price="4"
+                data-desc="Ice-cold Sirap Bandung Cincau, creamy Air Jagung Klebang, and refreshing Air Katira Pandan tied in an iconic ikat tepi plastic bag.">
+                <div class="stall-glow"></div>
+                <img src="assets/stall-air-balang.svg" alt="Air Balang Stall" class="stall-img">
+                <div class="stall-badge">
+                    <span class="stall-name">🥤 Air Balang Ikat Tepi</span>
+                    <span class="stall-tag">RM4</span>
+                </div>
+            </article>
+
+            <!-- STALL 4 (Right Bottom): Ramly Burger Special & Apam Balik -->
+            <article class="stall-unit stall-right" style="top: 56%;" data-title="Ramly Burger Special &amp; Apam Balik"
+                data-category="Street Food" data-price="7"
+                data-desc="Juicy beef patty wrapped in egg with black pepper &amp; chili mayo alongside crispy golden Apam Balik filled with sweet corn &amp; crushed peanuts.">
+                <div class="smoke-emitter" data-smoke-x="36%" data-smoke-y="58%"></div>
+                <div class="stall-glow"></div>
+                <img src="assets/stall-ramly.svg" alt="Ramly Burger & Apam Balik Stall" class="stall-img">
+                <div class="stall-badge">
+                    <span class="stall-name">🍔 Burger Ramly &amp; Apam Balik</span>
+                    <span class="stall-tag">RM7</span>
+                </div>
+            </article>
+
+            <!-- Bottom Fairy Lights -->
+            <div class="fairy-light-row" style="top: 90%;">
+                <img src="assets/fairy-lights.svg" alt="" class="fairy-svg">
+                <div class="fairy-bulbs-overlay">
+                    <span class="bulb" style="left: 9%;"></span>
+                    <span class="bulb" style="left: 21%;"></span>
+                    <span class="bulb" style="left: 36%;"></span>
+                    <span class="bulb" style="left: 50%;"></span>
+                    <span class="bulb" style="left: 64%;"></span>
+                    <span class="bulb" style="left: 79%;"></span>
+                    <span class="bulb" style="left: 91%;"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: MALAYSIAN CLOTHING, BATIK, BUNDLE & CAPAL -->
+        <section class="road-section" id="section-2" data-zone="Zone 2 • Batik, Bundle &amp; Fashion">
+            <!-- Overhead Blinking Fairy Lights -->
+            <div class="fairy-light-row" style="top: 48%;">
+                <img src="assets/fairy-lights.svg" alt="" class="fairy-svg">
+                <div class="fairy-bulbs-overlay">
+                    <span class="bulb" style="left: 9%;"></span>
+                    <span class="bulb" style="left: 21%;"></span>
+                    <span class="bulb" style="left: 36%;"></span>
+                    <span class="bulb" style="left: 50%;"></span>
+                    <span class="bulb" style="left: 64%;"></span>
+                    <span class="bulb" style="left: 79%;"></span>
+                    <span class="bulb" style="left: 91%;"></span>
+                </div>
+            </div>
+
+            <!-- Scenery Props & Parked Blue Pasar Malam Lorry (matching Figma right side) -->
+            <img src="assets/props-plants.svg" alt="" class="scenery-prop" style="top: 15%; left: 2%;">
+            <img src="assets/canopy-back-blue.svg" alt="" class="back-canopy" style="top: 12%; left: 9%;">
+            <div class="lorry-prop" style="top: 22%; right: 3%;">
+                <img src="assets/lorry.svg" alt="Pasar Malam Lorry" class="lorry-img">
+                <span class="lorry-blinker blinker-left"></span>
+                <span class="lorry-blinker blinker-right"></span>
+            </div>
+
+            <!-- STALL 5 (Left Top): Batik Terengganu, Baju Kurung & Tudung -->
+            <article class="stall-unit stall-left" style="top: 12%;" data-title="Batik Terengganu &amp; Kain Pelikat"
+                data-category="Malaysian Clothing" data-price="15"
+                data-desc="Hand-drawn floral Batik shirts, colorful Baju Kurung Kedah, silky Tudung bawal, and woven Kain Pelikat Gajah Duduk.">
+                <div class="stall-glow"></div>
+                <img src="assets/stall-batik.svg" alt="Batik & Tudung Stall" class="stall-img">
+                <div class="stall-badge">
+                    <span class="stall-name">👘 Batik &amp; Kain Pelikat</span>
+                    <span class="stall-tag">RM15</span>
+                </div>
+            </article>
+
+            <!-- STALL 6 (Left Bottom): Harimau Malaya Jersey & Capal Sandals -->
+            <article class="stall-unit stall-left" style="top: 55%;" data-title="Jersi Harimau Malaya &amp; Capal Kulit"
+                data-category="Clothing &amp; Footwear" data-price="12"
+                data-desc="Iconic yellow-and-black striped Harimau Malaya football jerseys, vintage RM10 bundle graphic tees, and handmade leather Capal sandals.">
+                <div class="stall-glow"></div>
+                <img src="assets/stall-bundle.svg" alt="Harimau Malaya Jersey & Capal Stall" class="stall-img">
+                <div class="stall-badge">
+                    <span class="stall-name">👕 Jersi Harimau &amp; Capal</span>
+                    <span class="stall-tag">RM12</span>
+                </div>
+            </article>
+
+            <!-- STALL 7 (Right Top): Tudung, Songkok & Baju Melayu -->
+            <article class="stall-unit stall-right" style="top: 12%;" data-title="Busana Tradisi &amp; Songkok Baldu"
+                data-category="Traditional Apparel" data-price="10"
+                data-desc="Velvet Songkok, festive Sampin Songket weaves, and breezy cotton night-market pyjamas loved by every Malaysian household.">
+                <div class="stall-glow"></div>
+                <img src="assets/stall-batik.svg" alt="Traditional Apparel Stall" class="stall-img">
+                <div class="stall-badge">
+                    <span class="stall-name">🧣 Songket &amp; Tudung</span>
+                    <span class="stall-tag">RM10</span>
+                </div>
+            </article>
+
+            <!-- STALL 8 (Right Bottom): Vintage Bundle & Pasar Malam Slippers -->
+            <article class="stall-unit stall-right" style="top: 56%;" data-title="Bundle Vintage RM10 &amp; Selipar Jepun"
+                data-category="Street Fashion" data-price="10"
+                data-desc="Dig through stacks of curated vintage bundle denim, retro windbreakers, tote bags, and classic Malaysian flip-flops.">
+                <div class="stall-glow"></div>
+                <img src="assets/stall-bundle.svg" alt="Bundle Clothing Stall" class="stall-img">
+                <div class="stall-badge">
+                    <span class="stall-name">👟 Bundle Vintage RM10</span>
+                    <span class="stall-tag">RM10</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- SECTION 3: PASAR MALAM GAMES, HERITAGE TOYS & MUSANG KING DURIAN -->
+        <section class="road-section" id="section-3" data-zone="Zone 3 • Games, Wau Bulan &amp; Durian">
+            <!-- Overhead Blinking Fairy Lights -->
+            <div class="fairy-light-row" style="top: 8%;">
+                <img src="assets/fairy-lights.svg" alt="" class="fairy-svg">
+                <div class="fairy-bulbs-overlay">
+                    <span class="bulb" style="left: 9%;"></span>
+                    <span class="bulb" style="left: 21%;"></span>
+                    <span class="bulb" style="left: 36%;"></span>
+                    <span class="bulb" style="left: 50%;"></span>
+                    <span class="bulb" style="left: 64%;"></span>
+                    <span class="bulb" style="left: 79%;"></span>
+                    <span class="bulb" style="left: 91%;"></span>
+                </div>
+            </div>
+
+            <!-- Scenery Props -->
+            <img src="assets/props-plants.svg" alt="" class="scenery-prop" style="top: 18%; left: 2%;">
+            <img src="assets/props-plants.svg" alt="" class="scenery-prop" style="top: 58%; right: 2%;">
+
+            <!-- STALL 9 (Left Top): Tangkap Ikan Longkang & Ring Toss Carnival Game -->
+            <article class="stall-unit stall-left" style="top: 14%;" data-title="Tangkap Ikan &amp; Tikam Gelang"
+                data-category="Pasar Malam Games" data-price="5"
+                data-desc="Test your childhood skill scooping colorful guppies with delicate paper nets or tossing rings onto glowing glass bottles!">
+                <div class="stall-glow neon-glow"></div>
+                <img src="assets/stall-games.svg" alt="Tangkap Ikan & Ring Toss Stall" class="stall-img">
+                <div class="stall-badge">
+                    <span class="stall-name">🎯 Tangkap Ikan &amp; Ring Toss</span>
+                    <span class="stall-tag">RM5</span>
+                </div>
+            </article>
+
+            <!-- STALL 10 (Left Bottom): Wau Bulan, Congkak, Gasing & Nostalgic Toys -->
+            <article class="stall-unit stall-left" style="top: 56%;" data-title="Warisan Wau Bulan, Congkak &amp; Gasing"
+                data-category="Malaysian Culture &amp; Games" data-price="9"
+                data-desc="Handcrafted Kelantan Wau Bulan kites, wooden Congkak boards with glass guli marbles, Gasing Pangkah tops, and nostalgic Tora &amp; Ding Dang toy boxes.">
+                <div class="stall-glow"></div>
+                <img src="assets/stall-malaysia-culture.svg" alt="Wau Bulan & Congkak Stall" class="stall-img">
+                <div class="stall-badge">
+                    <span class="stall-name">🪁 Wau Bulan, Congkak &amp; Gasing</span>
+                    <span class="stall-tag">RM9</span>
+                </div>
+            </article>
+
+            <!-- STALL 11 (Right Top): Raja Buah Musang King Durian & Rambutan -->
+            <article class="stall-unit stall-right" style="top: 14%;" data-title="Durian Musang King, Manggis &amp; Rambutan"
+                data-category="Malaysian Tropical Fruits" data-price="15"
+                data-desc="Freshly pried Pahang Musang King durian with bittersweet creamy golden flesh, paired with sweet red Rambutan and Queen Mangosteen.">
+                <div class="stall-glow"></div>
+                <img src="assets/stall-durian.svg" alt="Musang King Durian Stall" class="stall-img">
+                <div class="stall-badge">
+                    <span class="stall-name">🌳 Durian Musang King</span>
+                    <span class="stall-tag">RM15</span>
+                </div>
+            </article>
+
+            <!-- STALL 12 (Right Bottom): Bubble Guns, LED Helikopters & Busker Corner -->
+            <article class="stall-unit stall-right" style="top: 56%;" data-title="Mainan Berlampu &amp; Belon Kartun"
+                data-category="Pasar Malam Toys &amp; Games" data-price="6"
+                data-desc="Flashing LED slingshot helicopters spinning into the night sky, automatic bubble blasters, and nostalgic pasar malam party poppers.">
+                <div class="stall-glow neon-glow"></div>
+                <img src="assets/stall-games.svg" alt="Light Up Toys Stall" class="stall-img">
+                <div class="stall-badge">
+                    <span class="stall-name">✨ Mainan LED &amp; Belon</span>
+                    <span class="stall-tag">RM6</span>
+                </div>
+            </article>
+
+            <!-- Bottom Fairy Lights -->
+            <div class="fairy-light-row" style="top: 90%;">
+                <img src="assets/fairy-lights.svg" alt="" class="fairy-svg">
+                <div class="fairy-bulbs-overlay">
+                    <span class="bulb" style="left: 9%;"></span>
+                    <span class="bulb" style="left: 21%;"></span>
+                    <span class="bulb" style="left: 36%;"></span>
+                    <span class="bulb" style="left: 50%;"></span>
+                    <span class="bulb" style="left: 64%;"></span>
+                    <span class="bulb" style="left: 79%;"></span>
+                    <span class="bulb" style="left: 91%;"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fixed Figma HUD Overlay (Visible while exploring the market) -->
+        <div class="market-hud" id="market-hud">
+            <!-- Top Right Ambient Sound / Top-up Wallet Button -->
+            <div class="hud-top-right">
+                <button class="hud-btn" id="topup-btn" title="ATM Top-up RM50">
+                    <span>+RM50</span>
+                </button>
+                <button class="hud-icon-btn" id="sound-btn" title="Toggle Night Market Ambience" aria-label="Toggle Sound">
+                    🔊
+                </button>
+            </div>
+
+            <!-- Bottom Left Title & Time (Matching Figma layout) -->
+            <div class="hud-bottom-left">
+                <div class="hud-title">Pasar Malam</div>
+                <div class="hud-meta">
+                    <span id="hud-time">Friday | 19:30</span>
+                    <span class="hud-divider">•</span>
+                    <span id="hud-zone">Zone 1 • Food &amp; Air Balang</span>
+                </div>
+            </div>
+
+            <!-- Bottom Right Shopping Bag & Info Buttons (Matching Figma layout) -->
+            <div class="hud-bottom-right">
+                <button class="hud-bag-btn" id="bag-btn" title="View Your Pasar Malam Tapau Bag">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#1d4ed8" stroke-width="2.2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="bag-count" id="bag-count">1</span>
+                </button>
+                <button class="hud-info-btn" id="info-btn" title="About Pasar Malam">
+                    i
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Stall Interaction / Tapau Bag Modal -->
+    <div class="modal-backdrop" id="modal-backdrop" hidden>
+        <div class="modal-card" id="modal-card">
+            <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

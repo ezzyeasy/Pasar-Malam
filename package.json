@@ -1,0 +1,11 @@
+{
+  "name": "pasar-malam",
+  "version": "1.0.0",
+  "description": "Pasar Malam interactive experience",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx --yes live-server --port=3000",
+    "start": "npx --yes live-server --port=3000"
+  }
+}
+

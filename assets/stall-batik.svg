@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 84" width="320" height="336" shape-rendering="crispEdges">
+  <!-- Drop Shadow -->
+  <rect x="6" y="8" width="68" height="72" fill="#090a0f" fill-opacity="0.55"/>
+
+  <!-- Display Table for Batik, Baju Kurung, Kain Pelikat & Tudung -->
+  <rect x="12" y="42" width="54" height="34" fill="#1e293b"/>
+  <rect x="14" y="44" width="50" height="30" fill="#334155"/>
+
+  <!-- Folded Stacks of Colorful Batik & Kain Pelikat -->
+  <!-- Stack 1: Royal Emerald Batik -->
+  <rect x="16" y="46" width="12" height="8" fill="#065f46"/>
+  <rect x="17" y="47" width="10" height="6" fill="#10b981"/>
+  <rect x="19" y="49" width="2" height="2" fill="#facc15"/>
+  <rect x="23" y="49" width="2" height="2" fill="#facc15"/>
+
+  <!-- Stack 2: Magenta Songket / Baju Kurung -->
+  <rect x="30" y="46" width="12" height="8" fill="#831843"/>
+  <rect x="31" y="47" width="10" height="6" fill="#ec4899"/>
+  <rect x="33" y="49" width="6" height="2" fill="#fde047"/>
+
+  <!-- Stack 3: Indigo & Gold Batik Shirts -->
+  <rect x="44" y="46" width="12" height="8" fill="#1e3a8a"/>
+  <rect x="45" y="47" width="10" height="6" fill="#3b82f6"/>
+  <rect x="47" y="48" width="2" height="4" fill="#f59e0b"/>
+  <rect x="51" y="48" width="2" height="4" fill="#f59e0b"/>
+
+  <!-- Hanging Rack with Tudung / Scarves & Kain Sarung -->
+  <rect x="16" y="58" width="28" height="2" fill="#94a3b8"/>
+  <rect x="17" y="60" width="5" height="10" fill="#f43f5e"/>
+  <rect x="23" y="60" width="5" height="10" fill="#a855f7"/>
+  <rect x="29" y="60" width="5" height="10" fill="#38bdf8"/>
+  <rect x="35" y="60" width="5" height="10" fill="#eab308"/>
+
+  <!-- Makcik Vendor in Tudung -->
+  <rect x="50" y="56" width="8" height="9" fill="#db2777"/>
+  <rect x="52" y="58" width="4" height="4" fill="#e0a97f"/>
+  <rect x="49" y="65" width="10" height="8" fill="#7e22ce"/>
+
+  <!-- Pyramidal Blue Pasar Malam Canopy Tent -->
+  <rect x="10" y="6" width="56" height="40" fill="#1e3a8a"/>
+  <rect x="12" y="8" width="52" height="14" fill="#3b82f6"/>
+  <rect x="12" y="8" width="14" height="36" fill="#2563eb"/>
+  <rect x="50" y="8" width="14" height="36" fill="#1d4ed8"/>
+  <rect x="12" y="32" width="52" height="12" fill="#1d4ed8"/>
+  <rect x="35" y="22" width="6" height="4" fill="#93c5fd"/>
+  <rect x="12" y="44" width="52" height="3" fill="#1e3a8a"/>
+
+  <!-- Hanging Warm Stall Light Bulb -->
+  <rect x="36" y="46" width="3" height="3" fill="#fef08a"/>
+  <rect x="34" y="45" width="7" height="6" fill="#facc15" fill-opacity="0.35"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 84" width="320" height="336" shape-rendering="crispEdges">
+  <!-- Drop Shadow -->
+  <rect x="6" y="8" width="68" height="72" fill="#090a0f" fill-opacity="0.55"/>
+
+  <!-- Bundle & Harimau Malaya Jersey + Capal Sandals Table -->
+  <rect x="12" y="42" width="54" height="34" fill="#451a03"/>
+  <rect x="14" y="44" width="50" height="30" fill="#78350f"/>
+
+  <!-- Harimau Malaya Jersey Display (Yellow & Black Stripes) -->
+  <rect x="16" y="46" width="12" height="12" fill="#facc15"/>
+  <rect x="18" y="46" width="2" height="12" fill="#18181b"/>
+  <rect x="22" y="46" width="2" height="12" fill="#18181b"/>
+  <rect x="26" y="46" width="2" height="12" fill="#18181b"/>
+
+  <!-- Retro Bundle Tees & Jeans Pile -->
+  <rect x="30" y="46" width="14" height="12" fill="#1e3a8a"/>
+  <rect x="32" y="48" width="10" height="8" fill="#ef4444"/>
+  <rect x="34" y="50" width="6" height="4" fill="#f8fafc"/>
+
+  <!-- Traditional Capal Sandals & Slippers Rack -->
+  <rect x="16" y="60" width="28" height="12" fill="#1e293b"/>
+  <!-- Pairs of Capal -->
+  <rect x="18" y="62" width="3" height="7" fill="#92400e"/>
+  <rect x="22" y="62" width="3" height="7" fill="#92400e"/>
+  <rect x="27" y="62" width="3" height="7" fill="#d97706"/>
+  <rect x="31" y="62" width="3" height="7" fill="#d97706"/>
+  <rect x="36" y="62" width="3" height="7" fill="#dc2626"/>
+  <rect x="40" y="62" width="3" height="7" fill="#dc2626"/>
+
+  <!-- RM10 Bundle Cardboard Sign -->
+  <rect x="47" y="46" width="14" height="8" fill="#fef08a"/>
+  <rect x="49" y="48" width="10" height="4" fill="#dc2626"/>
+
+  <!-- Vendor -->
+  <rect x="50" y="57" width="8" height="8" fill="#1c1917"/>
+  <rect x="49" y="65" width="10" height="8" fill="#eab308"/>
+
+  <!-- Pyramidal Blue Canopy Tent -->
+  <rect x="10" y="6" width="56" height="40" fill="#1e3a8a"/>
+  <rect x="12" y="8" width="52" height="14" fill="#3b82f6"/>
+  <rect x="12" y="8" width="14" height="36" fill="#2563eb"/>
+  <rect x="50" y="8" width="14" height="36" fill="#1d4ed8"/>
+  <rect x="12" y="32" width="52" height="12" fill="#1d4ed8"/>
+  <rect x="35" y="22" width="6" height="4" fill="#93c5fd"/>
+  <rect x="12" y="44" width="52" height="3" fill="#1e3a8a"/>
+
+  <!-- Hanging Warm Stall Light Bulb -->
+  <rect x="36" y="46" width="3" height="3" fill="#fef08a"/>
+  <rect x="34" y="45" width="7" height="6" fill="#facc15" fill-opacity="0.35"/>
+</svg>

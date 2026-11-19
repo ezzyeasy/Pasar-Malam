@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 320" width="1080" height="1920">
+  <defs>
+    <!-- Repeatable Asphalt Texture (32x32) -->
+    <pattern id="asphalt-pattern" width="32" height="32" patternUnits="userSpaceOnUse">
+      <rect width="32" height="32" fill="#23262e" />
+      <!-- Subtle pixel noise & surface grit -->
+      <rect x="3" y="4" width="1" height="1" fill="#1b1d24" />
+      <rect x="4" y="5" width="2" height="1" fill="#1b1d24" />
+      <rect x="18" y="9" width="1" height="1" fill="#2c303a" />
+      <rect x="25" y="14" width="2" height="1" fill="#1b1d24" />
+      <rect x="9" y="21" width="1" height="2" fill="#2c303a" />
+      <rect x="28" y="26" width="1" height="1" fill="#1b1d24" />
+      <rect x="14" y="29" width="2" height="1" fill="#1b1d24" />
+    </pattern>
+
+    <!-- Repeatable Concrete Sidewalk Texture (16x16) -->
+    <pattern id="sidewalk-pattern" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#464a54" />
+      <rect x="0" y="15" width="16" height="1" fill="#363942" />
+      <rect x="2" y="3" width="1" height="1" fill="#525763" />
+      <rect x="11" y="9" width="1" height="1" fill="#3c4049" />
+    </pattern>
+
+    <!-- Repeatable Malaysian Red & White Painted Curb (Vertical, 4x32) -->
+    <pattern id="curb-pattern" width="4" height="32" patternUnits="userSpaceOnUse">
+      <!-- Red segment -->
+      <rect x="0" y="0" width="3" height="16" fill="#dc2626" />
+      <rect x="3" y="0" width="1" height="16" fill="#991b1b" />
+      <!-- White segment -->
+      <rect x="0" y="16" width="3" height="16" fill="#f1f5f9" />
+      <rect x="3" y="16" width="1" height="16" fill="#94a3b8" />
+    </pattern>
+  </defs>
+
+  <!-- 1. Left & Right Sidewalks -->
+  <rect x="0" y="0" width="24" height="320" fill="url(#sidewalk-pattern)" />
+  <rect x="156" y="0" width="24" height="320" fill="url(#sidewalk-pattern)" />
+
+  <!-- 2. Red & White Roadside Curbs -->
+  <rect x="24" y="0" width="4" height="320" fill="url(#curb-pattern)" />
+  <rect x="152" y="0" width="4" height="320" fill="url(#curb-pattern)" />
+
+  <!-- 3. Main Asphalt Roadway -->
+  <rect x="28" y="0" width="124" height="320" fill="url(#asphalt-pattern)" />
+
+  <!-- 4. Curb Drop Shadows onto Asphalt -->
+  <rect x="28" y="0" width="2" height="320" fill="#15171c" />
+  <rect x="150" y="0" width="2" height="320" fill="#15171c" />
+
+  <!-- 5. Faded Yellow Roadside Lines -->
+  <rect x="33" y="0" width="2" height="320" fill="#eab308" fill-opacity="0.55" />
+  <rect x="145" y="0" width="2" height="320" fill="#eab308" fill-opacity="0.55" />
+
+  <!-- 6. Center Dashed Road Divider -->
+  <g fill="#cbd5e1" fill-opacity="0.65">
+    <rect x="89" y="10" width="2" height="18" />
+    <rect x="89" y="48" width="2" height="18" />
+    <rect x="89" y="86" width="2" height="18" />
+    <rect x="89" y="124" width="2" height="18" />
+    <rect x="89" y="162" width="2" height="18" />
+    <rect x="89" y="200" width="2" height="18" />
+    <rect x="89" y="238" width="2" height="18" />
+    <rect x="89" y="276" width="2" height="18" />
+  </g>
+
+  <!-- 7. Subtle Road Details (Cracks, Storm Drains & Manhole Cover) -->
+  <!-- Left Storm Drain -->
+  <g transform="translate(30, 64)">
+    <rect width="8" height="14" fill="#333842" />
+    <rect x="1" y="1" width="6" height="12" fill="#121418" />
+    <rect x="1" y="3" width="6" height="1" fill="#4b5262" />
+    <rect x="1" y="6" width="6" height="1" fill="#4b5262" />
+    <rect x="1" y="9" width="6" height="1" fill="#4b5262" />
+  </g>
+
+  <!-- Right Storm Drain -->
+  <g transform="translate(142, 210)">
+    <rect width="8" height="14" fill="#333842" />
+    <rect x="1" y="1" width="6" height="12" fill="#121418" />
+    <rect x="1" y="3" width="6" height="1" fill="#4b5262" />
+    <rect x="1" y="6" width="6" height="1" fill="#4b5262" />
+    <rect x="1" y="9" width="6" height="1" fill="#4b5262" />
+  </g>
+
+  <!-- Pixel Manhole Cover -->
+  <g transform="translate(114, 136)">
+    <rect x="3" y="0" width="6" height="12" fill="#373c47" />
+    <rect x="1" y="1" width="10" height="10" fill="#373c47" />
+    <rect x="0" y="3" width="12" height="6" fill="#373c47" />
+    <rect x="3" y="2" width="6" height="8" fill="#2a2e37" />
+    <rect x="2" y="3" width="8" height="6" fill="#2a2e37" />
+    <rect x="4" y="4" width="4" height="1" fill="#1c1f26" />
+    <rect x="4" y="7" width="4" height="1" fill="#1c1f26" />
+  </g>
+
+  <!-- Asphalt Cracks -->
+  <g fill="#16181e">
+    <rect x="52" y="92" width="1" height="4" />
+    <rect x="53" y="95" width="2" height="3" />
+    <rect x="55" y="97" width="1" height="5" />
+    
+    <rect x="122" y="254" width="3" height="1" />
+    <rect x="120" y="255" width="2" height="1" />
+    <rect x="119" y="256" width="1" height="4" />
+  </g>
+</svg>

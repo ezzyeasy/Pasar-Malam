@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 34" width="96" height="136" shape-rendering="crispEdges">
+  <!-- Shadow -->
+  <rect x="6" y="29" width="12" height="3" fill="#090a0f" fill-opacity="0.55"/>
+  <!-- Young Guy in Red Jersey & Blue Shorts -->
+  <rect x="8" y="4" width="8" height="5" fill="#1c1917"/>
+  <rect x="8" y="8" width="8" height="5" fill="#d99b72"/>
+  <rect x="10" y="9" width="1" height="1" fill="#1c1917"/>
+  <rect x="13" y="9" width="1" height="1" fill="#1c1917"/>
+  <!-- Red T-Shirt -->
+  <rect x="7" y="13" width="10" height="9" fill="#dc2626"/>
+  <rect x="5" y="14" width="2" height="6" fill="#d99b72"/>
+  <rect x="17" y="14" width="2" height="6" fill="#d99b72"/>
+  <!-- Jeans -->
+  <rect x="8" y="22" width="3" height="6" fill="#1d4ed8"/>
+  <rect x="13" y="22" width="3" height="6" fill="#1d4ed8"/>
+  <rect x="8" y="28" width="3" height="2" fill="#f8fafc"/>
+  <rect x="13" y="28" width="3" height="2" fill="#f8fafc"/>
+</svg>

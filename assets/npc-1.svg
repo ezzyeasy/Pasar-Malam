@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 34" width="96" height="136" shape-rendering="crispEdges">
+  <!-- Shadow -->
+  <rect x="6" y="29" width="12" height="3" fill="#090a0f" fill-opacity="0.55"/>
+  <!-- Pakcik with Songkok & Kain Pelikat Sarung -->
+  <rect x="8" y="3" width="8" height="4" fill="#0f172a"/>
+  <rect x="8" y="7" width="8" height="6" fill="#e0a97f"/>
+  <rect x="10" y="9" width="1" height="1" fill="#1c1917"/>
+  <rect x="13" y="9" width="1" height="1" fill="#1c1917"/>
+  <!-- Baju Pagoda / Collar Shirt -->
+  <rect x="7" y="13" width="10" height="8" fill="#f8fafc"/>
+  <rect x="5" y="14" width="2" height="6" fill="#e0a97f"/>
+  <rect x="17" y="14" width="2" height="6" fill="#e0a97f"/>
+  <!-- Plaid Kain Pelikat -->
+  <rect x="8" y="21" width="8" height="7" fill="#15803d"/>
+  <rect x="10" y="21" width="4" height="7" fill="#166534"/>
+  <rect x="8" y="24" width="8" height="2" fill="#facc15"/>
+  <!-- Capal Sandals -->
+  <rect x="8" y="28" width="3" height="2" fill="#78350f"/>
+  <rect x="13" y="28" width="3" height="2" fill="#78350f"/>
+</svg>

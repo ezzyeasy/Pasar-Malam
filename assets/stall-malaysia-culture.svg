@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 84" width="320" height="336" shape-rendering="crispEdges">
+  <!-- Drop Shadow -->
+  <rect x="6" y="8" width="68" height="72" fill="#090a0f" fill-opacity="0.55"/>
+
+  <!-- Malaysian Heritage Crafts & Traditional Toys Table -->
+  <rect x="12" y="42" width="54" height="34" fill="#451a03"/>
+  <rect x="14" y="44" width="50" height="30" fill="#78350f"/>
+
+  <!-- Wau Bulan (Traditional Kelantan Moon Kite) Display -->
+  <rect x="17" y="46" width="14" height="8" fill="#dc2626"/>
+  <rect x="19" y="47" width="10" height="6" fill="#facc15"/>
+  <rect x="22" y="48" width="4" height="4" fill="#2563eb"/>
+  <!-- Crescent bottom of Wau Bulan -->
+  <rect x="18" y="55" width="12" height="4" fill="#facc15"/>
+  <rect x="20" y="56" width="8" height="2" fill="#dc2626"/>
+
+  <!-- Wooden Congkak Board (14 holes + 2 storehouses) -->
+  <rect x="34" y="48" width="24" height="7" fill="#451a03"/>
+  <rect x="36" y="49" width="20" height="5" fill="#b45309"/>
+  <!-- Marble holes -->
+  <rect x="38" y="50" width="2" height="1" fill="#38bdf8"/>
+  <rect x="42" y="50" width="2" height="1" fill="#4ade80"/>
+  <rect x="46" y="50" width="2" height="1" fill="#f43f5e"/>
+  <rect x="50" y="50" width="2" height="1" fill="#facc15"/>
+  <rect x="38" y="52" width="2" height="1" fill="#facc15"/>
+  <rect x="42" y="52" width="2" height="1" fill="#f43f5e"/>
+  <rect x="46" y="52" width="2" height="1" fill="#38bdf8"/>
+  <rect x="50" y="52" width="2" height="1" fill="#4ade80"/>
+
+  <!-- Gasing (Traditional Spinning Tops) & Tora / Ding Dang Nostalgic Boxes -->
+  <rect x="18" y="62" width="6" height="6" fill="#d97706"/>
+  <rect x="20" y="64" width="2" height="2" fill="#fef08a"/>
+  <rect x="26" y="62" width="6" height="6" fill="#dc2626"/>
+  <rect x="28" y="64" width="2" height="2" fill="#fef08a"/>
+  <rect x="35" y="62" width="8" height="7" fill="#2563eb"/>
+  <rect x="36" y="63" width="6" height="5" fill="#fde047"/>
+
+  <!--Pakcik Craftsman Vendor in Songkok -->
+  <rect x="48" y="58" width="8" height="4" fill="#0f172a"/>
+  <rect x="49" y="62" width="6" height="4" fill="#e0a97f"/>
+  <rect x="47" y="66" width="10" height="7" fill="#15803d"/>
+
+  <!-- Pyramidal Red Canopy Tent -->
+  <rect x="10" y="6" width="56" height="40" fill="#7f1d1d"/>
+  <rect x="12" y="8" width="52" height="14" fill="#ef4444"/>
+  <rect x="12" y="8" width="14" height="36" fill="#dc2626"/>
+  <rect x="50" y="8" width="14" height="36" fill="#991b1b"/>
+  <rect x="12" y="32" width="52" height="12" fill="#b91c1c"/>
+  <rect x="35" y="22" width="6" height="4" fill="#fca5a5"/>
+  <rect x="12" y="44" width="52" height="3" fill="#991b1b"/>
+
+  <!-- Hanging Warm Stall Light Bulb -->
+  <rect x="36" y="46" width="3" height="3" fill="#fef08a"/>
+  <rect x="34" y="45" width="7" height="6" fill="#facc15" fill-opacity="0.35"/>
+</svg>
